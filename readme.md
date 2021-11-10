@@ -67,9 +67,9 @@ This will produce a visualization of the rank of the loss, outer and functional 
 In order to obtain the plots visualizing rank as a function of the depth of the network, run the following commands:
 
 
-    python3 rank_vs_depth.py --loss mse --dataset MNIST --batch_size 10 --init glorot --dim 64 --K 10 --width 25
+    python3 rank_vs_depth.py --loss mse --dataset MNIST --batch_size 10 --init glorot --dim 16 --K 10 --width 25
 
-    python3 plotting.py --loss mse --dataset MNIST --task width --dim 64 --K 10
+    python3 plotting.py --loss mse --dataset MNIST --task depth --dim 16 --K 10 --width 25
 
 
 This will produce a visualization of the rank of the loss, outer and functional Hessian as a function of the depth. The network architecture has hidden layer sizes width of varying depth. Here we use the dataset MNIST, mean-squared loss with 10 classes and Glorot initialization. The plot  will be saved in a directory, here this would be saved to results/store/width/mse/MNIST/25.
